@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pete The Pup </title>
+</head>
+<body>
+
+<!-- Create an Object Literal -->
+<script>
+// Create a literal object named myDog
+var myDog = {
+  name: "Pete",
+  breed: "American Pitbull Terrier",
+  claimToFame: "I starred in the comedy short film, The Little Rascals. My character was an American Pitbull Terrier. I was the family dog in a comedy short film about a group of poor neighborhood children and their adventures.",
+  mySound: "When you hear me bark, you should be scared.<br>"
+};
+
+// Display the dog's information using properties
+document.write("Hello, my name is " + myDog.name + ", when I bark I can be scary. " + myDog.claimToFame + " " + myDog.mySound);
+</script>
+
+<!-- Create an Object Using a Constructor -->
+<script>
+// Create a constructor function for a dog object
+function Dog(name, breed, claimToFame, mySound, canTalk) {
+  this.name = name;
+  this.breed = breed;
+  this.claimToFame = claimToFame;
+  this.mySound = mySound;
+  this.canTalk = canTalk;
+
+  // Create an object method
+  this.myGreeting = function() {
+    document.write("<br>Hello, my name is " + this.name + ", when I bark I can be scary. " + this.claimToFame + " " + this.mySound);
+  };
+}
+
+// Create a new dog object using the constructor
+var myDogConst = new Dog("Pete", "American Pitbull Terrier", "I starred in the comedy short film, The Little Rascals. My character was an American Pitbull Terrier. I was the family dog in a comedy short film about a group of poor neighborhood children and their adventures.", "When you hear me bark, you should be scared.", true);
+
+// Call the object's method to display the greeting
+myDogConst.myGreeting();
+</script>
+
+</body>
+</html>
