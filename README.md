@@ -23,6 +23,7 @@ A new Dog object myDogConst is instantiated, representing Pete with specified at
 **Output**:
 
 The document writes two greetings to the webpage, each representing Pete's introduction via the object literal and the constructor function, respectively.
+
 **Technologies Used**:
 
 - _HTML_: Structures the document and provides a canvas for JavaScript interactions.
